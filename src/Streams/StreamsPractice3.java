@@ -21,7 +21,7 @@ public class StreamsPractice3 {
 		employees.add(new Employee("Clint", 46));
 		employees.add(new Employee("Bruce", 49));
 		employees.add(new Employee("Thanos", 15000));
-		
+
 	}
 
 	private static boolean isAvenger(Employee e) {

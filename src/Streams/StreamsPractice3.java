@@ -2,16 +2,14 @@ package Streams;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import Lambdas.Employee;
 
-public class StreamsPractice2 {
+public class StreamsPractice3 {
 
 	/**
 	 * Write a method that takes a list of
-	 * employees and creates another list with employees
-	 * who are younger than 50 and their name is longer or equal than 5 characters
+	 * employees and returns sum of age of avengers
 	 */
 
 	public static void main(String[] args) {
@@ -22,8 +20,13 @@ public class StreamsPractice2 {
 		employees.add(new Employee("Steve", 100));
 		employees.add(new Employee("Clint", 46));
 		employees.add(new Employee("Bruce", 49));
+		employees.add(new Employee("Thanos", 15000));
+		
+	}
 
-
-		List<Employee> filteredList = new ArrayList<>();
+	private static boolean isAvenger(Employee e) {
+		if(e.getName().equals("Thanos"))
+			return false;
+		return true;
 	}
 }
